@@ -1,0 +1,16 @@
+{
+  "name": "appium-nightwatch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "nightwatch -c nightwatch -e android"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "appium": "^1.8.1",
+    "nightwatch": "^0.9.21",
+    "selenium-server": "^3.13.0"
+  }
+}

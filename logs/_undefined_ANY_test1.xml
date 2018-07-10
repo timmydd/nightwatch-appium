@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="1"
+            tests="1">
+
+  <testsuite name="test1"
+    errors="0" failures="1" hostname="" id="" package="test1" skipped="0"
+    tests="1" time="8.344" timestamp="Tue, 10 Jul 2018 14:26:08 GMT">
+  
+    <testcase name="Demo test Google" classname="test1" time="8.344" assertions="1">  <failure message="Testing if attribute text of &lt;//android.widget.TextView[@resource-id=&#34;com.android.calculator2:id/result&#34;]&gt; equals &#34;18&#34;.">    at Page.getResult (/Users/douglt11/code/appium-nightwatch/pages/calculator.js:22:28)
+    at Object.Demo test Google (/Users/douglt11/code/appium-nightwatch/tests/test1.js:11:20)</failure>
+
+    
+    </testcase>
+  
+
+  
+
+  
+  </testsuite>
+</testsuites>

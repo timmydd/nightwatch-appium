@@ -1,0 +1,31 @@
+{
+	"src_folders": ["./tests"],
+	"page_objects_path": ["./pages"],
+	"output_folder": "./logs/",
+	"selenium": {
+		"start_process": true,
+		"log_path": "./logs/"
+	},
+	"test_settings": {
+		"android": {
+			"selenium_port": 4723,
+			"selenium_host": "localhost",
+			"silent": true,
+			"use_xpath": true,
+			"screenshots": {
+				"enabled": false,
+				"path": ""
+			},
+			"desiredCapabilities": {
+                "automationName":"Appium",
+                "browserName":"",
+                "appPackage":"com.android.calculator2",
+                "appActivity":"com.android.calculator2.Calculator",
+                "platformName": "Android",
+                "platformVersion": "8.1.0",
+                "device": "Pixel 2",
+                "deviceName": "Pixel_2_API_27"
+            }
+		}
+	}
+}
