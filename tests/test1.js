@@ -1,16 +1,12 @@
 module.exports = {
-    'Demo test Google' : function (client) {
-    
+    '1+1=2' : function (client) {    
         var calculator = client.page.calculator();
 
-        // calculator.clickNumber(9);
-        calculator.click(calculator.generateLocator('@numberKey', 4))
+        calculator.click(1)
         calculator.clickPlus();
-        calculator.clickNumber(3);
+        calculator.click(1)
         calculator.clickEquals();
         calculator.getResult();
-       
-
         client.end();
     }
 };
