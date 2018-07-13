@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "nightwatch -c nightwatch -e android"
+    "test": "nightwatch -c nightwatch -e android",
+    "test-addition": "nightwatch -c nightwatch -e android --tag addition",
+    "test-subtraction": "nightwatch -c nightwatch -e android --tag subtraction",   
+    "test-multiplication": "nightwatch -c nightwatch -e android --tag multiplication",
+    "test-division": "nightwatch -c nightwatch -e android --tag division"
   },
   "author": "",
   "license": "ISC",

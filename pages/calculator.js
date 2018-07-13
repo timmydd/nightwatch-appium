@@ -1,4 +1,4 @@
-var utils = require("util");
+var utils = require('util');
 
 var calculatorCommands = {
     generateLocator: function(elementName, value) {
@@ -14,12 +14,20 @@ var calculatorCommands = {
         return this.click('@plus');
     },
 
+    clickMinus: function() {
+        return this.click('@minus');
+    },
+
+    clickMultiply: function() {
+        return this.click('@multiply');
+    },
+
     clickEquals: function() {
         return this.click('@equals');
     },
 
-    getResult: function() {
-        return this.assert.attributeEquals('@result', 'text', '18');
+    assertResult: function(result) {
+        return this.assert.attributeEquals('@result', 'text', result);
             
     }
 }
@@ -37,6 +45,16 @@ module.exports = {
         plus: {
             selector: '//android.widget.Button[@resource-id="com.android.calculator2:id/op_add"]',
             locateStrategy: 'xpath' 
+        },
+
+        minus: {
+            selector: '//android.widget.Button[@resource-id="com.android.calculator2:id/op_sub"]',
+            locateStrategy: 'xpath'
+        },
+
+        multiply: {
+            selector: '//android.widget.Button[@resource-id="com.android.calculator2:id/op_mul"]',
+            locateStrategy: 'xpath'
         },
 
         equals: {
