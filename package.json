@@ -6,7 +6,7 @@
   "scripts": {
     "test": "nightwatch -c nightwatch -e android",
     "test-addition": "nightwatch -c nightwatch -e android --tag addition",
-    "test-subtraction": "nightwatch -c nightwatch -e android --tag subtraction",   
+    "test-subtraction": "nightwatch -c nightwatch -e android --tag subtraction",
     "test-multiplication": "nightwatch -c nightwatch -e android --tag multiplication",
     "test-division": "nightwatch -c nightwatch -e android --tag division"
   },
@@ -15,6 +15,7 @@
   "dependencies": {
     "appium": "^1.8.1",
     "nightwatch": "^0.9.21",
+    "nightwatch-html-reporter": "^2.0.5",
     "selenium-server": "^3.13.0"
   }
 }

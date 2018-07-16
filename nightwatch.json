@@ -1,10 +1,10 @@
 {
 	"src_folders": ["./tests"],
 	"page_objects_path": ["./pages"],
-	"output_folder": "./logs/",
+	"output_folder": "./reports/",
 	"selenium": {
 		"start_process": true,
-		"log_path": "./logs/"
+		"log_path": "./reports/logs/"
 	},
 	"test_settings": {
 		"android": {
