@@ -54,5 +54,18 @@ module.exports = {
         calculator.clickEquals();
         calculator.assertResult('10');
         client.end();
-    }
+    },
+
+    '5.5+5=10.05' : function (client) {    
+        var calculator = client.page.calculator();
+
+        calculator.clickNumber(5);
+        calculator.clickDecimal();
+        calculator.clickNumber(5);
+        calculator.clickPlus();
+        calculator.clickNumber(5)
+        calculator.clickEquals();
+        calculator.assertResult('10.5');
+        client.end();
+    },
 };

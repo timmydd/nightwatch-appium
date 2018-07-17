@@ -22,6 +22,18 @@ var calculatorCommands = {
         return this.click('@multiply');
     },
 
+    clickDivide: function() {
+        return this.click('@divide');
+    },
+
+    clickDecimal: function() {
+        return this.click('@decimal');
+    },
+
+    clickDelete: function() {
+        return this.click('@delete');
+    },
+
     clickEquals: function() {
         return this.click('@equals');
     },
@@ -38,7 +50,6 @@ module.exports = {
     elements: {
         numberKey: {
             selector: '//android.widget.Button[@resource-id="com.android.calculator2:id/digit_%s"]',
-            // selector: '//android.widget.Button[@resource-id="com.android.calculator2:id/digit_' + number + '"]',
             locateStrategy: 'xpath' 
         },
 
@@ -54,6 +65,21 @@ module.exports = {
 
         multiply: {
             selector: '//android.widget.Button[@resource-id="com.android.calculator2:id/op_mul"]',
+            locateStrategy: 'xpath'
+        },
+
+        divide: {
+            selector: '//android.widget.Button[@resource-id="com.android.calculator2:id/op_div"]',
+            locateStrategy: 'xpath'
+        },
+
+        decimal: {
+            selector: '//android.widget.Button[@resource-id="com.android.calculator2:id/dec_point"]',
+            locateStrategy: 'xpath'
+        },
+
+        delete: {
+            selector: '//android.widget.Button[@resource-id="com.android.calculator2:id/del"]',
             locateStrategy: 'xpath'
         },
 
