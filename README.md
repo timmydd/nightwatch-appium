@@ -6,7 +6,7 @@ Then install Appium desktop server http://appium.io/
 
 Then start the server
 
-Then plug in a device
+Then plug in an Android device
 
 Then run npm test
 
